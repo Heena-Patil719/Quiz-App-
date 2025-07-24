@@ -1,20 +1,31 @@
+Of course\! Here is the updated CSS with the new color palette and refined alignment for better visual harmony.
+
+The new color scheme uses:
+
+  * **Orange:** `#F18C22`
+  * **Pink/Rose:** `#E36887`
+  * **Light Yellow/Beige:** `#F3D98F`
+  * **Blue:** `#7298C7`
+  * **Olive Green:** `#B4B535`
+
+<!-- end list -->
+
+```css
 /* Base Styling */
 body {
-
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-
 }
 
 .quiz-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto; /* Added margin-top for better spacing from header */
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .quiz-section {
@@ -22,7 +33,7 @@ body {
 }
 
 h2 {
-  color: #333;
+  color: #7298C7; /* New Blue */
   font-size: 24px;
 }
 
@@ -45,7 +56,7 @@ h2 {
 .quiz-link {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #007bff;
+  background-color: #F18C22; /* New Orange */
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -57,7 +68,7 @@ h2 {
 }
 
 .quiz-link:hover {
-  background-color: #0056b3;
+  background-color: #d9791b; /* Darker Orange */
 }
 
 .question-container {
@@ -69,6 +80,7 @@ h2 {
 .question-container p {
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333; /* Ensuring question text is dark */
 }
 
 .option-container {
@@ -91,7 +103,7 @@ input[type="radio"] {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #B4B535; /* New Olive Green */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -104,7 +116,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #9a9b2e; /* Darker Olive Green */
 }
 
 /* Responsive footer */
@@ -116,7 +128,7 @@ button:hover {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: linear-gradient(135deg, #4f8cff, #8f94fb, #c3cfe2);
+  background: linear-gradient(135deg, #7298C7, #E36887); /* New Gradient */
   width: 100%;
   padding: 1rem 2rem;
   color: #fff;
@@ -124,7 +136,6 @@ button:hover {
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
   font-size: 1rem;
   border-top: 0.055rem solid white;
-
 }
 
 .footer-container p {
@@ -141,17 +152,17 @@ button:hover {
 
 .link {
   text-decoration: none;
-  color: black;
+  color: white; /* Changed for better contrast on new gradient */
   font-weight: 500;
   margin-right: 1rem;
-  opacity: 0.75;
+  opacity: 0.85; /* Slightly increased opacity */
   display: flex;
   align-items: center;
 }
 
 .icon {
   padding: 0.5rem;
-  opacity: 0.75;
+  opacity: 0.85;
   font-size: 1.1rem;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -159,13 +170,13 @@ button:hover {
 .link:hover {
   transform: scale(1.1);
   opacity: 1;
-  color: white;
+  color: #F3D98F; /* New Yellow for hover accent */
   transition: all 0.3s ease-in-out;
 }
 
 .icon:hover {
   transform: scale(1.1);
-  color: #fff;
+  color: #F3D98F; /* New Yellow for hover accent */
   opacity: 1;
 }
 
@@ -182,25 +193,17 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .btnclass {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-
 }
 
 .timer-container,
 .score-display {
-
   display: flex;
   align-items: center;
   gap: 8px;
@@ -209,26 +212,20 @@ button:hover {
 }
 
 .timer-container {
-  color: #d32f2f; /* Red color for timer to stand out */
-  background-color: #ffebee;
+  color: #E36887; /* New Pink/Rose */
+  background-color: #fde8ed; /* Lighter Pink/Rose */
   padding: 8px 12px;
   border-radius: 20px;
 }
 
 .score-display {
-  color: #2e7d32; /* Green color for score */
-  background-color: #e8f5e9;
+  color: #B4B535; /* New Olive Green */
+  background-color: #f5f5dc; /* Lighter Olive/Beige */
   padding: 8px 12px;
   border-radius: 20px;
 }
 
-#timer {
-  font-weight: bold;
-  min-width: 25px;
-  text-align: center;
-}
-
-#score {
+#timer, #score {
   font-weight: bold;
   min-width: 25px;
   text-align: center;
@@ -244,24 +241,25 @@ button:hover {
   }
   to {
     transform: scale(1.1);
-    color: #b71c1c;
+    color: #c2185b; /* Darker Pink/Rose */
   }
 }
 
 #responseMessage {
   margin-top: 20px;
-  color: green;
+  color: #B4B535; /* New Olive Green */
 }
 
 /* Added sticky progress header */
 .progress-header {
   position: sticky;
-  top: 0;
+  top: 60px; /* Adjusted for fixed quiz-header */
   z-index: 10;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   margin: -20px -20px 20px -20px;
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
 }
 
 /* Progress bar styling */
@@ -287,7 +285,7 @@ button:hover {
 
 .progress-fill {
   height: 100%;
-  background-color: #007bff;
+  background-color: #7298C7; /* New Blue */
   transition: width 0.3s ease;
   border-radius: 4px;
 }
@@ -304,80 +302,44 @@ button:hover {
 
 /* Highlight answered questions */
 .question-container.answered {
-  background-color: #f0f8f0;
-  border-color: #4caf50 !important;
+  background-color: #fbfade; /* Light Yellow/Olive background */
+  border-color: #B4B535 !important; /* New Olive Green */
 }
 
 /* Enhanced button styling */
 button.answered {
-  background-color: #4caf50 !important;
+  background-color: #B4B535 !important; /* New Olive Green */
   cursor: not-allowed;
 }
 
 button.answered:hover {
-  background-color: #45a049 !important;
+  background-color: #9a9b2e !important; /* Darker Olive Green */
 }
 
 /* ----------------- Responsive Styling ----------------- */
-/* Mobile First */
 @media (max-width: 600px) {
-  .quiz-container {
-    padding: 15px;
-    width: 90%;
-  }
-  .quiz-link {
-    width: 100%;
-    font-size: 0.95rem;
-  }
-  button {
-    width: 100%;
-    font-size: 1rem;
-    padding: 12px;
-  }
-  .footer-container p {
-    margin-left: 0;
-    margin-bottom: 0.7rem;
-  }
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.2rem;
-  }
-  .footer-links {
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  /* Responsive progress header */
-  .progress-header {
-    padding: 10px 15px;
-    margin: -15px -15px 15px -15px;
-  }
-  .progress-info {
-    font-size: 12px;
-  }
+  .quiz-container { padding: 15px; width: 90%; margin: 20px auto; }
+  .quiz-link { width: 100%; font-size: 0.95rem; }
+  button { width: 100%; font-size: 1rem; padding: 12px; }
+  .footer-container { flex-direction: column; text-align: center; padding: 1.2rem; }
+  .footer-container p { margin-left: 0; margin-bottom: 0.7rem; }
+  .footer-links { margin: 0; flex-wrap: wrap; justify-content: center; }
+  .progress-header { padding: 10px 15px; margin: -15px -15px 15px -15px; top: 50px; }
+  .progress-info { font-size: 12px; }
 }
 
-/* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .quiz-container {
-    width: 80%;
-  }
-  button {
-    width: 50%;
-  }
+  .quiz-container { width: 80%; }
+  button { width: 50%; }
 }
 
-/* Desktop (Already Well Styled) */
 @media (min-width: 1025px) {
-  .quiz-container {
-    width: 50%;
-  }
+  .quiz-container { width: 60%; max-width: 800px; }
 }
 
 #contact-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto; /* Added margin-top */
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -388,26 +350,25 @@ button.answered:hover {
   display: block;
   margin-top: 15px;
   font-weight: bold;
-
+  color: #7298C7; /* New Blue */
 }
-/*navbar*/
+/* Navbar */
 .mynavbar {
- background: linear-gradient(135deg, #4f8cff, #8f94fb, #c3cfe2);
-  padding: 2.2rem 2rem;
+  background: linear-gradient(135deg, #7298C7, #E36887); /* New Gradient */
+  padding: 1.5rem 2rem; /* Adjusted padding */
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #fff;
-    font-weight: 500;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
-    font-size: 1rem;
-    border-top: 0.055rem solid white;
-   
+  font-weight: 500;
+  border-bottom: 0.055rem solid rgba(255, 255, 255, 0.5); /* Softened border */
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px; /* Added max-width for large screens */
+  margin: 0 auto; /* Center container */
 }
 
 .logo {
@@ -422,20 +383,23 @@ button.answered:hover {
 
 .nav-links .link {
   text-decoration: none;
-  color: #000;
+  color: #fff; /* White links for contrast */
   font-weight: 600;
   transition: 0.3s ease;
+  opacity: 0.9;
 }
 
 .nav-links .link:hover {
-  text-decoration: underline;
-  color: #333;
+  opacity: 1;
+  color: #F3D98F; /* New Yellow for hover */
+  text-decoration: none; /* Removed underline for cleaner look */
 }
-/*Scoreboard*/
+/* Scoreboard */
 .scoreboard-main {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  margin-top: 30px; /* Added margin */
 }
 
 .scoreboard-card {
@@ -449,6 +413,7 @@ button.answered:hover {
 
 .scoreboard-card h2 {
   margin-top: 0;
+  color: #7298C7; /* New Blue */
 }
 
 table {
@@ -463,18 +428,23 @@ th, td {
   border-bottom: 1px solid #ccc;
 }
 
+th {
+  background-color: #f0f5fa; /* Light Blue background for table headers */
+  color: #333;
+}
+
 .back-button {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.5rem 1rem;
-  background-color: #007bff;
+  background-color: #F18C22; /* New Orange */
   color: white;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-  background-color: #0056b3;
+  background-color: #d9791b; /* Darker Orange */
 }
-
